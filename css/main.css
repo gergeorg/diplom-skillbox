@@ -1,0 +1,405 @@
+.about {
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    background-color: #fbfbfb;
+}
+
+.about-info {
+    padding-top: 95px;
+    position: relative;
+    z-index: 1;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info__title {
+    color: #1f1f24;
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 45px;
+    white-space: nowrap;
+}
+
+.about-info__title--sub {
+    color: #8993ad;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+    margin-top: 15px;
+}
+
+.about__image {
+    margin-right: -80px;
+    position: relative;
+    z-index: 10;
+}
+
+.about__svg {
+    position: absolute;
+    right: -9px;
+    bottom: 0;
+    z-index: 0;
+}
+
+        /* Блок "Что я делаю" */
+
+.works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-work{
+    padding: 87px 0 75px 0;
+}
+
+.works-items {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.works-items__text {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #8993AD;
+}
+
+.button-work{
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+        /* Блок "Примеры моих работ" */
+
+.portfolio {
+    background-color: #fbfbfb;
+}
+
+.heading-portfolio{
+    padding: 95px 0 100px 0;
+}
+
+.swiper-container{
+    position: relative;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    background-image: url('../img/arrow.png');
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 60px;
+    width: 61px;
+    height: 60px;
+    left: 15px;
+    top: 370px;
+    position: absolute;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-next {
+    background-image: url('../img/arrow.png');;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 60px;
+    transform: rotate(180deg);
+    width: 61px;
+    height: 60px;
+    right: 15px;
+    top: 370px;
+    position: absolute;
+    outline: none;
+}
+
+.portfolio__item{
+    color: #8993ad;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 59.73px;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+
+.portfolio-button{
+    margin: 80px auto 100px;
+}
+
+        /* Блок с ценами */
+
+.price{
+    padding: 70px 0 90px 0;
+    background: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+}
+
+.price-container {
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+.heading-price{
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.price-comment{
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav__list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .about__image {
+        margin-right: 0;
+    }
+
+    .about__svg {
+        right: 0;
+    }
+
+    .about-info {
+        padding-top: 145px;
+    }
+
+    .about-info__title {
+        font-size: 54px;
+        margin-bottom: 45px;
+    }
+
+    .about-info__title--sub {
+        margin-top: 20px;
+    }
+
+    .works {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .work-container {
+        padding-bottom: 100px;
+    }
+
+    .heading-work{
+        padding-top: 80px;
+    }
+
+    .works-items {
+        width: 260px;
+        margin-bottom: 65px;
+    }
+
+    .button-work{
+        margin-bottom: 10px;
+    }
+
+    .swiper-pagination {
+        display: block;
+        position: relative;
+        margin-top: 90px;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+    
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+
+    .swiper-pagination-bullet {
+        width: 18px !important;
+        height: 18px !important;
+        outline: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #ff6633 !important;
+    }
+ 
+    .portfolio__item{
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .portfolio-button{
+        margin: 86px auto 100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .price{
+        padding: 70px 40px 90px;
+    }
+
+    .about__image {
+        max-width: 300px;
+    }
+
+    .about__svg {
+        max-width: 400px;
+    }
+
+    .about-info {
+        padding-top: 100px;
+    }
+
+    .about-info__title {
+        font-size: 45px;
+    }
+
+    .about-info__title--sub {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-info {
+        text-align: center;
+    }
+
+    .about__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+
+    .about__svg {
+        max-width: none;
+        width: 100%;
+        right: 0px;
+        top: 90px;
+        height: 296px;
+    }
+
+    .about__image {
+        max-width: 230px;
+        margin-top: 19px;
+        margin-right: -57px;
+        z-index: 1;
+    }
+
+    .about-info {
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .about-info h1{
+        margin: 0;
+    }
+
+    .about-info__title {
+        font-size: 30px;
+        white-space: initial;
+        margin-bottom: 35px;
+    }
+
+    .about-info__title--sub {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 10px 20px;
+    }
+
+    .heading-work{
+        padding: 35px 0 30px 0;
+    }
+
+    .works{
+        margin-top: 15px;
+    }
+
+    .works-items__img{
+        width: 25%;
+    }
+
+    .works-items__text {
+        font-size: 16px;
+        margin: 10px auto;
+
+    }
+
+    .works-items {
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    figure{
+        margin: 0;
+    }
+
+    .heading-portfolio{
+        padding: 35px 0 50px 0;
+    }
+
+    .work-container {
+        padding-bottom: 50px;
+    }
+
+    .portfolio__item{
+        font-size: 18px;
+        line-height: 59.73px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .swiper-pagination {
+
+        margin-top: 30px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        outline: none;
+    }
+
+    .portfolio-button{
+        margin: 40px auto 40px;
+    }
+    .price{
+        padding: 35px 0 40px 0;
+    }
+
+    .heading-price{
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .price-comment{
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 35px;
+    }
+
+    .price-container {
+        margin: 0 20px;
+    }
+}

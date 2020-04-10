@@ -1,0 +1,176 @@
+.header{
+    padding: 29px 0;
+    background-color: #fbfbfb;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 25px; */
+}
+
+.nav {
+    display: inline-block;         
+}
+.nav ul {
+    padding: 0;
+}
+   
+.nav ul li {
+    display: inline-block;
+}
+        
+.nav ul li a {
+    display: inline-block;
+    margin-right: 28px;
+    font-size: 16px;
+    position: relative;
+}
+
+.header_nav__link:hover::after {
+    width: 100%;
+    transition: .3s;
+}
+
+.header__request-call{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__tel{
+    color: #1f1f24;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-right: 25px;
+}
+
+.phone{
+    margin-right: 25px;
+    margin-left: auto;
+    color: #1f1f24;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.button-call__header{
+    width: 209px;
+    height: 48px;
+}
+
+.menu__burger{
+    display: none;
+    height: 32px;
+}
+
+.nav_close{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .menu__burger{
+        display: inline-block;
+    } 
+
+    .nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+
+        width: 53%;
+        height: 100vh;
+
+        background-color: #fff;
+        
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        background: linear-gradient(13deg, #ff8f5a 0%, #ff2f96 99%, #ff2f96 100%);
+    }
+
+    .nav_open{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .nav_close{
+        display: inline-block;
+    }
+
+    .nav ul {
+        width: 50%;
+    }
+
+    .nav ul li {
+        display: block;
+        width: 100%;
+        margin-left: 80px;
+        padding: 50px;
+    
+    }
+
+    .nav ul li a {
+        font-size: 25px;
+    }
+
+    .nav ul li a::after {
+        display: none;
+    }
+
+    .nav ul li a {
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header__container {
+        align-content: center;
+    }
+
+    .header{
+        padding: 20px 0;
+    }
+
+    .menu__burger{
+        width: 24px;
+        height: 18px;
+    }
+
+    .header__tel{
+        font-size: 18px;
+        line-height: 18px;
+        
+    }
+
+    .button-call__header {
+        width: 26px;
+        height: 26px;
+        border: 1px solid #fa0891;
+        border-radius: 100%;
+        background-image: url(../img/call.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+
+    .nav{
+        width: 100%;
+
+    }
+
+    .nav ul li {
+        margin-left: 50px;
+    }
+}
